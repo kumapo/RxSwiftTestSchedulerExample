@@ -7,30 +7,134 @@
 //
 
 import XCTest
+import RxSwift
 @testable import RxSwiftTestSchedulerExample
 
-class RxSwiftTestSchedulerExampleTests: XCTestCase {
+class RxSwiftTestSchedulerExampleTests: RxTest {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_BehaviorSubject() {
+        let scheduler = TestScheduler(initialClock: 0)
+        
+        let xs = scheduler.createHotObservable([
+            next(70, 1),
+            next(110, 2),
+            next(220, 3),
+            next(270, 4),
+            next(340, 5),
+            next(410, 6),
+            next(520, 7),
+            next(630, 8),
+            next(710, 9),
+            next(870, 10),
+            next(940, 11),
+            next(1020, 12)
+            ])
+        
+        var subject: BehaviorSubject<Int>! = nil
+        var subscription: Disposable! = nil
+        
+        let results1 = scheduler.createObserver(Int)
+        var subscription1: Disposable! = nil
+        
+        scheduler.scheduleAt(100) { subject = BehaviorSubject<Int>(value: 100) }
+        scheduler.scheduleAt(200) { subscription = xs.subscribe(subject) }
+        scheduler.scheduleAt(300) { subscription1 = subject.subscribe(results1) }
+        
+        scheduler.scheduleAt(500) { subject.onCompleted() }
+        scheduler.scheduleAt(600) { subscription1.dispose() }
+        scheduler.scheduleAt(1000) { subscription.dispose() }
+        
+        scheduler.start()
+        
+        XCTAssertEqual(results1.messages, [
+            next(300, 4),
+            next(340, 5),
+            next(410, 6),
+            completed(500)
+            ])
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func test_test_BehaviorSubject_ColdObservable() {
+        let scheduler = TestScheduler(initialClock: 0)
+        
+        let xs = scheduler.createColdObservable([
+            next(70, 1),
+            next(110, 2),
+            next(220, 3),
+            next(270, 4),
+            next(340, 5),
+            next(410, 6),
+            next(520, 7),
+            next(630, 8),
+            next(710, 9),
+            next(870, 10),
+            next(940, 11),
+            next(1020, 12)
+            ])
+        
+        var subject: BehaviorSubject<Int>! = nil
+        var subscription: Disposable! = nil
+        
+        let results1 = scheduler.createObserver(Int)
+        var subscription1: Disposable! = nil
+        
+        scheduler.scheduleAt(100) { subject = BehaviorSubject<Int>(value: 100) }
+        scheduler.scheduleAt(200) { subscription = xs.subscribe(subject) }
+        scheduler.scheduleAt(300) { subscription1 = subject.subscribe(results1) }
+        
+        scheduler.scheduleAt(500) { subject.onCompleted() }
+        scheduler.scheduleAt(600) { subscription1.dispose() }
+        scheduler.scheduleAt(1000) { subscription.dispose() }
+        
+        scheduler.start()
+        
+        XCTAssertEqual(results1.messages, [
+            next(300, 1),
+            next(310, 2),
+            next(420, 3),
+            next(470, 4),
+            completed(500)
+            ])
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func test_ViewModel() {
+        class MockClient: Fetchable {
+            let xs: ColdObservable<Int>
+            init(scheduler: TestScheduler) {
+                xs = scheduler.createColdObservable([
+                    next(100, 200)  //200 as OK
+                    ])
+            }
+            func fetch() -> Observable<Int> { return xs.asObservable() }
         }
+        class MockViewModel: ViewModel {
+            var scheduler: TestScheduler
+            init(scheduler: TestScheduler) {
+                self.scheduler = scheduler
+                super.init()
+            }
+            override var client: Fetchable { return MockClient(scheduler: scheduler) }
+        }
+        
+        let scheduler = TestScheduler(initialClock: 0)
+        let testSubject = MockViewModel(scheduler: scheduler)
+        let results     = scheduler.createObserver(State)
+        let disposeBag  = DisposeBag()
+        
+        scheduler.scheduleAt(100) {
+            testSubject.state.subscribe(results).addDisposableTo(disposeBag) }
+        scheduler.scheduleAt(200) {
+            _ = testSubject.load().subscribe() }
+        
+        scheduler.start()
+        
+        XCTAssertEqual(results.messages, [
+            next(100, .Empty),
+            next(200, .InProgress),
+            next(300, .Success)
+            ])
+        
     }
     
 }
