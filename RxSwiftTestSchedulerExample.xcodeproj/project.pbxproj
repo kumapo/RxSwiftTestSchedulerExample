@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F6B3F21CFE1DD665E7A58DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		54BD49991C230A1C0048F28C /* ElementIndexPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementIndexPair.swift; sourceTree = "<group>"; };
 		54BD499A1C230A1C0048F28C /* EquatableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableArray.swift; sourceTree = "<group>"; };
 		54BD499C1C230A1C0048F28C /* BackgroundThreadPrimitiveHotObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundThreadPrimitiveHotObservable.swift; sourceTree = "<group>"; };
@@ -85,8 +86,7 @@
 		54FF6F331C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftTestSchedulerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FF6F371C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestSchedulerExampleTests.swift; sourceTree = "<group>"; };
 		54FF6F391C22F8E80062530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E26D6D0D44B7B4064306F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6999CF433FA1E3AA3572A552 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		89CEB70B2AC0C573BACBB7E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A4878CF540C7C56D250DCEDC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218F7F3468A90B8F9C0C4757 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89CEB70B2AC0C573BACBB7E3 /* Pods.debug.xcconfig */,
+				3F6B3F21CFE1DD665E7A58DA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3E5EC89E94FC8ACAFC485C2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +177,7 @@
 				54FF6F361C22F8E80062530A /* RxSwiftTestSchedulerExampleTests */,
 				54FF6F201C22F8E80062530A /* Products */,
 				3E5EC89E94FC8ACAFC485C2D /* Frameworks */,
-				76E9C2C680DE20E48FA67806 /* Pods */,
+				218F7F3468A90B8F9C0C4757 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,15 +215,6 @@
 			path = RxSwiftTestSchedulerExampleTests;
 			sourceTree = "<group>";
 		};
-		76E9C2C680DE20E48FA67806 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6999CF433FA1E3AA3572A552 /* Pods.debug.xcconfig */,
-				63E26D6D0D44B7B4064306F4 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,7 +225,7 @@
 				54FF6F1B1C22F8E80062530A /* Sources */,
 				54FF6F1C1C22F8E80062530A /* Frameworks */,
 				54FF6F1D1C22F8E80062530A /* Resources */,
-				484B9C69966ADAC2453B747A /* Embed Pods Frameworks */,
+				5A10F4C991A201A87CECE3BC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,7 +313,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		484B9C69966ADAC2453B747A /* Embed Pods Frameworks */ = {
+		5A10F4C991A201A87CECE3BC /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -488,7 +488,7 @@
 		};
 		54FF6F3D1C22F8E80062530A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6999CF433FA1E3AA3572A552 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 89CEB70B2AC0C573BACBB7E3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RxSwiftTestSchedulerExample/Info.plist;
@@ -500,7 +500,7 @@
 		};
 		54FF6F3E1C22F8E80062530A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63E26D6D0D44B7B4064306F4 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 3F6B3F21CFE1DD665E7A58DA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RxSwiftTestSchedulerExample/Info.plist;
