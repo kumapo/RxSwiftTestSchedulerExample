@@ -30,6 +30,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
             next(1020, 12)
             ])
         
+        
         var subject: BehaviorSubject<Int>! = nil
         var subscription: Disposable! = nil
         
@@ -54,7 +55,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
             ])
     }
     
-    func test_test_BehaviorSubject_ColdObservable() {
+    func test_BehaviorSubject_ColdObservable() {
         let scheduler = TestScheduler(initialClock: 0)
         
         let xs = scheduler.createColdObservable([
@@ -118,14 +119,14 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
         }
         
         let scheduler = TestScheduler(initialClock: 0)
-        let testSubject = MockViewModel(scheduler: scheduler)
+        let viewModel = MockViewModel(scheduler: scheduler)
         let results     = scheduler.createObserver(State)
         let disposeBag  = DisposeBag()
         
         scheduler.scheduleAt(100) {
-            testSubject.state.subscribe(results).addDisposableTo(disposeBag) }
+            viewModel.state.subscribe(results).addDisposableTo(disposeBag) }
         scheduler.scheduleAt(200) {
-            _ = testSubject.load().subscribe() }
+            _ = viewModel.load().subscribe() }
         
         scheduler.start()
         
@@ -134,7 +135,6 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
             next(200, .InProgress),
             next(300, .Success)
             ])
-        
     }
     
 }
