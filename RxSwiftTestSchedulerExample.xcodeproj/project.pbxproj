@@ -32,6 +32,7 @@
 		54BD49C81C230A890048F28C /* RestfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C61C230A890048F28C /* RestfulClient.swift */; };
 		54BD49C91C230F820048F28C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C51C230A890048F28C /* ViewModel.swift */; };
 		54BD49CA1C230F850048F28C /* RestfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C61C230A890048F28C /* RestfulClient.swift */; };
+		54E9B4F91C25AA0100EBC8F3 /* FlatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9B4F81C25AA0100EBC8F3 /* FlatMapTests.swift */; };
 		54FF6F231C22F8E80062530A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6F221C22F8E80062530A /* AppDelegate.swift */; };
 		54FF6F251C22F8E80062530A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6F241C22F8E80062530A /* ViewController.swift */; };
 		54FF6F281C22F8E80062530A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FF6F261C22F8E80062530A /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 		54BD49AF1C230A1C0048F28C /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		54BD49C51C230A890048F28C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		54BD49C61C230A890048F28C /* RestfulClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestfulClient.swift; sourceTree = "<group>"; };
+		54E9B4F81C25AA0100EBC8F3 /* FlatMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatMapTests.swift; sourceTree = "<group>"; };
 		54FF6F1F1C22F8E80062530A /* RxSwiftTestSchedulerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTestSchedulerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FF6F221C22F8E80062530A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FF6F241C22F8E80062530A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				54BD49981C230A1C0048F28C /* TestImplementations */,
 				54FF6F371C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift */,
+				54E9B4F81C25AA0100EBC8F3 /* FlatMapTests.swift */,
 				54FF6F391C22F8E80062530A /* Info.plist */,
 			);
 			path = RxSwiftTestSchedulerExampleTests;
@@ -359,6 +362,7 @@
 				54BD49CA1C230F850048F28C /* RestfulClient.swift in Sources */,
 				54BD49BD1C230A1C0048F28C /* TestObservable.swift in Sources */,
 				54FF6F381C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift in Sources */,
+				54E9B4F91C25AA0100EBC8F3 /* FlatMapTests.swift in Sources */,
 				54BD49B81C230A1C0048F28C /* MySubject.swift in Sources */,
 				54BD49C01C230A1C0048F28C /* Recorded.swift in Sources */,
 				54BD49C31C230A1C0048F28C /* VirtualTimeSchedulerBase.swift in Sources */,
