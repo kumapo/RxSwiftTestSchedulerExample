@@ -136,5 +136,4 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
             next(300, .Success)
             ])
     }
-    
 }
