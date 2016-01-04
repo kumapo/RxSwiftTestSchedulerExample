@@ -7,32 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54BD49B01C230A1C0048F28C /* ElementIndexPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49991C230A1C0048F28C /* ElementIndexPair.swift */; };
-		54BD49B11C230A1C0048F28C /* EquatableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD499A1C230A1C0048F28C /* EquatableArray.swift */; };
-		54BD49B21C230A1C0048F28C /* BackgroundThreadPrimitiveHotObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD499C1C230A1C0048F28C /* BackgroundThreadPrimitiveHotObservable.swift */; };
-		54BD49B31C230A1C0048F28C /* ColdObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD499D1C230A1C0048F28C /* ColdObservable.swift */; };
-		54BD49B41C230A1C0048F28C /* HotObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD499E1C230A1C0048F28C /* HotObservable.swift */; };
-		54BD49B51C230A1C0048F28C /* MainThreadPrimitiveHotObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD499F1C230A1C0048F28C /* MainThreadPrimitiveHotObservable.swift */; };
-		54BD49B61C230A1C0048F28C /* MockDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A01C230A1C0048F28C /* MockDisposable.swift */; };
-		54BD49B71C230A1C0048F28C /* MockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A11C230A1C0048F28C /* MockObserver.swift */; };
-		54BD49B81C230A1C0048F28C /* MySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A21C230A1C0048F28C /* MySubject.swift */; };
-		54BD49B91C230A1C0048F28C /* Observable.Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A31C230A1C0048F28C /* Observable.Extensions.swift */; };
-		54BD49BA1C230A1C0048F28C /* PrimitiveHotObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A41C230A1C0048F28C /* PrimitiveHotObservable.swift */; };
-		54BD49BB1C230A1C0048F28C /* PrimitiveMockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A51C230A1C0048F28C /* PrimitiveMockObserver.swift */; };
-		54BD49BC1C230A1C0048F28C /* TestConnectableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A61C230A1C0048F28C /* TestConnectableObservable.swift */; };
-		54BD49BD1C230A1C0048F28C /* TestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A71C230A1C0048F28C /* TestObservable.swift */; };
-		54BD49BE1C230A1C0048F28C /* TestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A81C230A1C0048F28C /* TestObserver.swift */; };
-		54BD49BF1C230A1C0048F28C /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49A91C230A1C0048F28C /* Observable+Extensions.swift */; };
-		54BD49C01C230A1C0048F28C /* Recorded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49AA1C230A1C0048F28C /* Recorded.swift */; };
-		54BD49C11C230A1C0048F28C /* RxTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49AB1C230A1C0048F28C /* RxTest.swift */; };
-		54BD49C21C230A1C0048F28C /* TestScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49AD1C230A1C0048F28C /* TestScheduler.swift */; };
-		54BD49C31C230A1C0048F28C /* VirtualTimeSchedulerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49AE1C230A1C0048F28C /* VirtualTimeSchedulerBase.swift */; };
-		54BD49C41C230A1C0048F28C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49AF1C230A1C0048F28C /* Subscription.swift */; };
 		54BD49C71C230A890048F28C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C51C230A890048F28C /* ViewModel.swift */; };
 		54BD49C81C230A890048F28C /* RestfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C61C230A890048F28C /* RestfulClient.swift */; };
 		54BD49C91C230F820048F28C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C51C230A890048F28C /* ViewModel.swift */; };
 		54BD49CA1C230F850048F28C /* RestfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C61C230A890048F28C /* RestfulClient.swift */; };
-		54E9B4F91C25AA0100EBC8F3 /* FlatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9B4F81C25AA0100EBC8F3 /* FlatMapTests.swift */; };
 		54FF6F231C22F8E80062530A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6F221C22F8E80062530A /* AppDelegate.swift */; };
 		54FF6F251C22F8E80062530A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6F241C22F8E80062530A /* ViewController.swift */; };
 		54FF6F281C22F8E80062530A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FF6F261C22F8E80062530A /* Main.storyboard */; };
@@ -54,30 +32,8 @@
 
 /* Begin PBXFileReference section */
 		3F6B3F21CFE1DD665E7A58DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		54BD49991C230A1C0048F28C /* ElementIndexPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementIndexPair.swift; sourceTree = "<group>"; };
-		54BD499A1C230A1C0048F28C /* EquatableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableArray.swift; sourceTree = "<group>"; };
-		54BD499C1C230A1C0048F28C /* BackgroundThreadPrimitiveHotObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundThreadPrimitiveHotObservable.swift; sourceTree = "<group>"; };
-		54BD499D1C230A1C0048F28C /* ColdObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColdObservable.swift; sourceTree = "<group>"; };
-		54BD499E1C230A1C0048F28C /* HotObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotObservable.swift; sourceTree = "<group>"; };
-		54BD499F1C230A1C0048F28C /* MainThreadPrimitiveHotObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThreadPrimitiveHotObservable.swift; sourceTree = "<group>"; };
-		54BD49A01C230A1C0048F28C /* MockDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDisposable.swift; sourceTree = "<group>"; };
-		54BD49A11C230A1C0048F28C /* MockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockObserver.swift; sourceTree = "<group>"; };
-		54BD49A21C230A1C0048F28C /* MySubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySubject.swift; sourceTree = "<group>"; };
-		54BD49A31C230A1C0048F28C /* Observable.Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.Extensions.swift; sourceTree = "<group>"; };
-		54BD49A41C230A1C0048F28C /* PrimitiveHotObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitiveHotObservable.swift; sourceTree = "<group>"; };
-		54BD49A51C230A1C0048F28C /* PrimitiveMockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitiveMockObserver.swift; sourceTree = "<group>"; };
-		54BD49A61C230A1C0048F28C /* TestConnectableObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConnectableObservable.swift; sourceTree = "<group>"; };
-		54BD49A71C230A1C0048F28C /* TestObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObservable.swift; sourceTree = "<group>"; };
-		54BD49A81C230A1C0048F28C /* TestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObserver.swift; sourceTree = "<group>"; };
-		54BD49A91C230A1C0048F28C /* Observable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
-		54BD49AA1C230A1C0048F28C /* Recorded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorded.swift; sourceTree = "<group>"; };
-		54BD49AB1C230A1C0048F28C /* RxTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTest.swift; sourceTree = "<group>"; };
-		54BD49AD1C230A1C0048F28C /* TestScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScheduler.swift; sourceTree = "<group>"; };
-		54BD49AE1C230A1C0048F28C /* VirtualTimeSchedulerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualTimeSchedulerBase.swift; sourceTree = "<group>"; };
-		54BD49AF1C230A1C0048F28C /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		54BD49C51C230A890048F28C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		54BD49C61C230A890048F28C /* RestfulClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestfulClient.swift; sourceTree = "<group>"; };
-		54E9B4F81C25AA0100EBC8F3 /* FlatMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatMapTests.swift; sourceTree = "<group>"; };
 		54FF6F1F1C22F8E80062530A /* RxSwiftTestSchedulerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTestSchedulerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FF6F221C22F8E80062530A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FF6F241C22F8E80062530A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,50 +84,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		54BD49981C230A1C0048F28C /* TestImplementations */ = {
-			isa = PBXGroup;
-			children = (
-				54BD49991C230A1C0048F28C /* ElementIndexPair.swift */,
-				54BD499A1C230A1C0048F28C /* EquatableArray.swift */,
-				54BD499B1C230A1C0048F28C /* Mocks */,
-				54BD49A91C230A1C0048F28C /* Observable+Extensions.swift */,
-				54BD49AA1C230A1C0048F28C /* Recorded.swift */,
-				54BD49AB1C230A1C0048F28C /* RxTest.swift */,
-				54BD49AC1C230A1C0048F28C /* Schedulers */,
-				54BD49AF1C230A1C0048F28C /* Subscription.swift */,
-			);
-			path = TestImplementations;
-			sourceTree = "<group>";
-		};
-		54BD499B1C230A1C0048F28C /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				54BD499C1C230A1C0048F28C /* BackgroundThreadPrimitiveHotObservable.swift */,
-				54BD499D1C230A1C0048F28C /* ColdObservable.swift */,
-				54BD499E1C230A1C0048F28C /* HotObservable.swift */,
-				54BD499F1C230A1C0048F28C /* MainThreadPrimitiveHotObservable.swift */,
-				54BD49A01C230A1C0048F28C /* MockDisposable.swift */,
-				54BD49A11C230A1C0048F28C /* MockObserver.swift */,
-				54BD49A21C230A1C0048F28C /* MySubject.swift */,
-				54BD49A31C230A1C0048F28C /* Observable.Extensions.swift */,
-				54BD49A41C230A1C0048F28C /* PrimitiveHotObservable.swift */,
-				54BD49A51C230A1C0048F28C /* PrimitiveMockObserver.swift */,
-				54BD49A61C230A1C0048F28C /* TestConnectableObservable.swift */,
-				54BD49A71C230A1C0048F28C /* TestObservable.swift */,
-				54BD49A81C230A1C0048F28C /* TestObserver.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		54BD49AC1C230A1C0048F28C /* Schedulers */ = {
-			isa = PBXGroup;
-			children = (
-				54BD49AD1C230A1C0048F28C /* TestScheduler.swift */,
-				54BD49AE1C230A1C0048F28C /* VirtualTimeSchedulerBase.swift */,
-			);
-			path = Schedulers;
-			sourceTree = "<group>";
-		};
 		54FF6F161C22F8E80062530A = {
 			isa = PBXGroup;
 			children = (
@@ -210,9 +122,7 @@
 		54FF6F361C22F8E80062530A /* RxSwiftTestSchedulerExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				54BD49981C230A1C0048F28C /* TestImplementations */,
 				54FF6F371C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift */,
-				54E9B4F81C25AA0100EBC8F3 /* FlatMapTests.swift */,
 				54FF6F391C22F8E80062530A /* Info.plist */,
 			);
 			path = RxSwiftTestSchedulerExampleTests;
@@ -349,31 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BD49B21C230A1C0048F28C /* BackgroundThreadPrimitiveHotObservable.swift in Sources */,
-				54BD49C21C230A1C0048F28C /* TestScheduler.swift in Sources */,
-				54BD49BC1C230A1C0048F28C /* TestConnectableObservable.swift in Sources */,
-				54BD49B11C230A1C0048F28C /* EquatableArray.swift in Sources */,
-				54BD49C41C230A1C0048F28C /* Subscription.swift in Sources */,
 				54BD49C91C230F820048F28C /* ViewModel.swift in Sources */,
-				54BD49C11C230A1C0048F28C /* RxTest.swift in Sources */,
-				54BD49B31C230A1C0048F28C /* ColdObservable.swift in Sources */,
-				54BD49B91C230A1C0048F28C /* Observable.Extensions.swift in Sources */,
-				54BD49BE1C230A1C0048F28C /* TestObserver.swift in Sources */,
 				54BD49CA1C230F850048F28C /* RestfulClient.swift in Sources */,
-				54BD49BD1C230A1C0048F28C /* TestObservable.swift in Sources */,
 				54FF6F381C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift in Sources */,
-				54E9B4F91C25AA0100EBC8F3 /* FlatMapTests.swift in Sources */,
-				54BD49B81C230A1C0048F28C /* MySubject.swift in Sources */,
-				54BD49C01C230A1C0048F28C /* Recorded.swift in Sources */,
-				54BD49C31C230A1C0048F28C /* VirtualTimeSchedulerBase.swift in Sources */,
-				54BD49B41C230A1C0048F28C /* HotObservable.swift in Sources */,
-				54BD49B71C230A1C0048F28C /* MockObserver.swift in Sources */,
-				54BD49BA1C230A1C0048F28C /* PrimitiveHotObservable.swift in Sources */,
-				54BD49B01C230A1C0048F28C /* ElementIndexPair.swift in Sources */,
-				54BD49BF1C230A1C0048F28C /* Observable+Extensions.swift in Sources */,
-				54BD49BB1C230A1C0048F28C /* PrimitiveMockObserver.swift in Sources */,
-				54BD49B51C230A1C0048F28C /* MainThreadPrimitiveHotObservable.swift in Sources */,
-				54BD49B61C230A1C0048F28C /* MockDisposable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
