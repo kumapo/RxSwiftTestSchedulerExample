@@ -8,9 +8,10 @@
 
 import XCTest
 import RxSwift
+import RxTests
 @testable import RxSwiftTestSchedulerExample
 
-class RxSwiftTestSchedulerExampleTests: RxTest {
+class RxSwiftTestSchedulerExampleTests {
     
     func test_BehaviorSubject() {
         let scheduler = TestScheduler(initialClock: 0)
@@ -47,7 +48,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
         
         scheduler.start()
         
-        XCTAssertEqual(results1.messages, [
+        XCTAssertEqual(results1.events, [
             next(300, 4),
             next(340, 5),
             next(410, 6),
@@ -89,7 +90,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
         
         scheduler.start()
         
-        XCTAssertEqual(results1.messages, [
+        XCTAssertEqual(results1.events, [
             next(300, 1),
             next(310, 2),
             next(420, 3),
@@ -101,7 +102,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
     
     func test_ViewModel() {
         class MockClient: Fetchable {
-            let xs: ColdObservable<Int>
+            let xs: TestableObservable<Int>
             init(scheduler: TestScheduler) {
                 xs = scheduler.createColdObservable([
                     next(100, 200)  //200 as OK
@@ -130,7 +131,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
         
         scheduler.start()
         
-        XCTAssertEqual(results.messages, [
+        XCTAssertEqual(results.events, [
             next(100, .Empty),
             next(200, .InProgress),
             next(300, .Success)
