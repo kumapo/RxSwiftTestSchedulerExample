@@ -8,9 +8,10 @@
 
 import XCTest
 import RxSwift
+import RxTests
 @testable import RxSwiftTestSchedulerExample
 
-class FlatMapTests: RxTest {
+class FlatMapTests {
     let disposeBag = DisposeBag()
 
     func test_flatMap1() {
@@ -34,7 +35,7 @@ class FlatMapTests: RxTest {
         }
         scheduler.start()
         
-        XCTAssertEqual(results.messages, [
+        XCTAssertEqual(results.events, [
             next(200, "a"),
             error(201, xerror)
             ])
@@ -62,7 +63,7 @@ class FlatMapTests: RxTest {
         }
         scheduler.start()
         
-        XCTAssertEqual(results.messages, [
+        XCTAssertEqual(results.events, [
             error(102, yerror)
             ])
     }
@@ -87,7 +88,7 @@ class FlatMapTests: RxTest {
         }
         scheduler.start()
         
-        XCTAssertEqual(results.messages, [
+        XCTAssertEqual(results.events, [
             next(201, "a"),
             completed(301)
             ])
