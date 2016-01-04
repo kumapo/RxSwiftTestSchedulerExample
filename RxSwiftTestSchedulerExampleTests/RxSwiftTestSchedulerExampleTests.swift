@@ -124,7 +124,7 @@ class RxSwiftTestSchedulerExampleTests: RxTest {
         let disposeBag  = DisposeBag()
         
         scheduler.scheduleAt(100) {
-            viewModel.state.subscribe(results).addDisposableTo(disposeBag) }
+            viewModel.state.asObservable().subscribe(results).addDisposableTo(disposeBag) }
         scheduler.scheduleAt(200) {
             _ = viewModel.load().subscribe() }
         

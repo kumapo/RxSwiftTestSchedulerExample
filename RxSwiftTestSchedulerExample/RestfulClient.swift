@@ -30,7 +30,7 @@ public class RestfulClient: Fetchable {
     }
     
     public func fetch() -> Observable<Int> {
-        let subject: Observable<Int> = create { [unowned self] observer in
+        let subject: Observable<Int> = Observable.create { [unowned self] observer in
             let url     = NSURL.init(string: RestfulClient.endpoint)
             let request = NSURLRequest.init(URL: url!)
             let task = self.session.dataTaskWithRequest(request) { (_, response, err) in
