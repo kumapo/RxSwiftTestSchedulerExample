@@ -3,9 +3,9 @@
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-pod 'RxSwift', '~> 2.0.0'
-pod 'RxCocoa', '~> 2.0.0'
-pod 'RxTests', '~> 2.0.0'
+pod 'RxSwift', '~> 2.1.0'
+pod 'RxCocoa', '~> 2.1.0'
+pod 'RxTests', '~> 2.1.0'
 
 target 'RxSwiftTestSchedulerExample' do
 
