@@ -11,7 +11,7 @@ import RxSwift
 import RxTests
 @testable import RxSwiftTestSchedulerExample
 
-class FlatMapTests {
+class FlatMapTests : XCTestCase {
     let disposeBag = DisposeBag()
 
     func test_flatMap1() {

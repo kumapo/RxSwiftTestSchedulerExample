@@ -11,7 +11,7 @@ import RxSwift
 import RxTests
 @testable import RxSwiftTestSchedulerExample
 
-class RxSwiftTestSchedulerExampleTests {
+class RxSwiftTestSchedulerExampleTests : XCTestCase {
     
     func test_BehaviorSubject() {
         let scheduler = TestScheduler(initialClock: 0)  // TestScheduler を作成
