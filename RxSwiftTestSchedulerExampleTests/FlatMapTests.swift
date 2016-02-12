@@ -142,10 +142,10 @@ class FlatMapTests : XCTestCase {
         scheduler.scheduleAt(0) {
             xs.flatMap { _ -> Observable<String> in
                 return scheduler
-                    .createColdObservable(
-                        [ next(100, value.popLast()!),
-                          completed(101) ])
-                    .asObservable()
+                    .createColdObservable([
+                        next(     100, value.popLast()!),
+                        completed(101)
+                    ]).asObservable()
                 }.subscribe(results)
                 .addDisposableTo(self.disposeBag)
         }
@@ -177,17 +177,17 @@ class FlatMapTests : XCTestCase {
         scheduler.scheduleAt(0) {
             let x = xs.flatMap { _ -> Observable<String> in
                 return scheduler
-                    .createColdObservable(
-                        [ next(100, xval.popLast()!),
-                          completed(101) ])
-                    .asObservable()
+                    .createColdObservable([
+                        next(     101, xval.popLast()!),
+                        completed(101)
+                    ]).asObservable()
                 }
             let y = ys.flatMap { _ -> Observable<String> in
                 return scheduler
-                    .createColdObservable(
-                        [ next(100, yval.popLast()!),
-                          completed(101) ])
-                    .asObservable()
+                    .createColdObservable([
+                        next(      50, yval.popLast()!),    // if respond quickly
+                        completed(101)
+                    ]).asObservable()
                 }
             [x, y]
                 .toObservable()
@@ -197,10 +197,10 @@ class FlatMapTests : XCTestCase {
         scheduler.start()
         
         XCTAssertEqual(results.events, [
-            next(200, "a"),
-            next(201, "x"),
-            next(300, "b"),
-            next(301, "y"),
+            next(151, "x"), // inverse as ys -> xs
+            next(201, "a"),
+            next(251, "y"),
+            next(301, "b"),
             completed(1000)  // emit y completed
             ])
     }
