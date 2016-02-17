@@ -33,7 +33,7 @@ class ConcatTests : XCTestCase {
         scheduler.start()
         
         XCTAssertEqual(results.events, [
-            next(0, "appendedRepositories"),
+            next(0, "appendedRepositories"),    //isEdge
             completed(100) ])
     }
     func test_concat2() {
@@ -56,7 +56,7 @@ class ConcatTests : XCTestCase {
         scheduler.start()
         
         XCTAssertEqual(results.events, [
-            next(0, "appendedRepositories")] )
+            next(0, "appendedRepositories")] )  //notEdge
     }
     
     func test_concat3() {

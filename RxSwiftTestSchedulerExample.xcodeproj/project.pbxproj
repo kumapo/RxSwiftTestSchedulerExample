@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54B773BE1C74885500AF036B /* TakeUntilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B773BD1C74885500AF036B /* TakeUntilTests.swift */; };
 		54BD49C71C230A890048F28C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C51C230A890048F28C /* ViewModel.swift */; };
 		54BD49C81C230A890048F28C /* RestfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C61C230A890048F28C /* RestfulClient.swift */; };
 		54BD49C91C230F820048F28C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD49C51C230A890048F28C /* ViewModel.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		3F6B3F21CFE1DD665E7A58DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		54B773BD1C74885500AF036B /* TakeUntilTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeUntilTests.swift; sourceTree = "<group>"; };
 		54BD49C51C230A890048F28C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		54BD49C61C230A890048F28C /* RestfulClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestfulClient.swift; sourceTree = "<group>"; };
 		54D92A841C6E057200F5CFB0 /* ConcatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcatTests.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				54E5290C1C3A6BBC00934501 /* FlatMapTests.swift */,
 				54FF6F371C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift */,
 				54D92A841C6E057200F5CFB0 /* ConcatTests.swift */,
+				54B773BD1C74885500AF036B /* TakeUntilTests.swift */,
 				54FF6F391C22F8E80062530A /* Info.plist */,
 			);
 			path = RxSwiftTestSchedulerExampleTests;
@@ -270,6 +273,7 @@
 				54E5290D1C3A6BBC00934501 /* FlatMapTests.swift in Sources */,
 				54BD49CA1C230F850048F28C /* RestfulClient.swift in Sources */,
 				54FF6F381C22F8E80062530A /* RxSwiftTestSchedulerExampleTests.swift in Sources */,
+				54B773BE1C74885500AF036B /* TakeUntilTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
